@@ -6,3 +6,11 @@ services:
       - 3000:3000
     volumes:
       - homepage:/app/config # Make sure your local config directory exists
+    networks:
+      - custom
+
+networks:
+  custom:
+
+volumes:
+  homepage:
